@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background: linear-gradient(135deg, blue,green,purple);
+    height: 100vh;
+}
+
+.wrapper{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    
+}
+
+.conatiner{
+    height: 70vmin;
+    width: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+}
+
+.button-option{
+    height: 20vmin;
+    width: 20vmin;
+    color: #ffffff;
+    border-radius: 8px;
+    border: none;
+    /* box-shadow: 12px 0 0 rgba(red, green, blue, alpha); */
+    font-size: 10vmin;
+}
+
+#restart{
+    position: relative;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    margin: 12px 0 auto 0;
+    border: none;
+    border-radius: 8px;
+    left: 36.5%;
+    transition: .5s;
+}
+
+.popup{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(green, brown, red, yellow);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vmin;
+}
+
+#message{
+    font-size: 12vmin;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+#new-game{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    margin: 1.6rem;
+    text-align: center;
+    font-size: 3vmin;
+    border-radius: 5px;
+    border: none;
+    transition: .7s;
+}
+#new-game:hover{
+    padding: 1.3rem;
+    margin: 1.3rem;
+    font-size: 4vmin;
+    border-radius: 8px;
+}
+
+.popup.hide{
+    display: none;
+}
